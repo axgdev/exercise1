@@ -105,7 +105,7 @@ public class ThemeChooseWindow extends JDialog implements ActionListener, ListSe
 
     }
 
-    @Override
+    //@Override
     public void valueChanged(ListSelectionEvent event)
     {
         String element = this.themesList.getModel().getElementAt(this.themesList.getSelectedIndex()).toString();

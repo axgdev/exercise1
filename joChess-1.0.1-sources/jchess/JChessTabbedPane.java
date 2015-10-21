@@ -75,7 +75,7 @@ public class JChessTabbedPane extends JTabbedPane implements MouseListener, Imag
         JChessApp.getApplication().show(JChessApp.jcv.newGameFrame);
     }
 
-    @Override
+    //@Override
     public void mouseClicked(MouseEvent e)
     {
         Rectangle rect; 
@@ -170,7 +170,7 @@ class TabbedPaneIcon implements Icon
         height = 16;
     }//--endOf-TabbedPaneIcon--
 
-    @Override
+    //@Override
     public void paintIcon(Component c, Graphics g, int x, int y)
     {
         this.x_pos = x;

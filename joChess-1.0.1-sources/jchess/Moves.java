@@ -80,19 +80,19 @@ public class Moves extends AbstractTableModel
     {
     }
 
-    @Override
+    //@Override
     public String getValueAt(int x, int y)
     {
         return this.move.get((y * 2) - 1 + (x - 1));
     }
 
-    @Override
+    //@Override
     public int getRowCount()
     {
         return this.rowsNum;
     }
 
-    @Override
+    //@Override
     public int getColumnCount()
     {
         return this.columnsNum;
