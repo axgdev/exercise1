@@ -79,7 +79,7 @@ public class NewRook extends Piece
     {
         ArrayList list = new ArrayList();
 
-        for (int i = this.square.pozY + 1; i <= 5; ++i)
+        for (int i = this.square.pozY + 1; (i <= 7) && (i <= (this.square.pozY + 5)); ++i)
         {//up
 
             if (this.checkPiece(this.square.pozX, i))
@@ -114,7 +114,7 @@ public class NewRook extends Piece
 
         }
 
-        for (int i = this.square.pozY - 1; i >= 0; --i)
+        for (int i = this.square.pozY - 1; (i >= 0) && (i >= this.square.pozY - 5); --i)
         {//down
 
             if (this.checkPiece(this.square.pozX, i))
@@ -148,7 +148,7 @@ public class NewRook extends Piece
             }
         }
 
-        for (int i = this.square.pozX - 1; i >= 0; --i)
+        for (int i = this.square.pozX - 1; (i >= 0) && (i <= this.square.pozX - 5); --i)
         {//left
 
             if (this.checkPiece(i, this.square.pozY))
@@ -182,7 +182,7 @@ public class NewRook extends Piece
             }
         }
 
-        for (int i = this.square.pozX + 1; i <= 5; ++i)
+        for (int i = this.square.pozX + 1; (i <= 7) && (i <= this.square.pozX + 5); ++i)
         {//right
 
             if (this.checkPiece(i, this.square.pozY))

@@ -168,7 +168,7 @@ public class Chessboard extends JPanel
             player.goDown = true;
         }
 
-        this.squares[0][i].setPiece(new Rook(this, player));
+        this.squares[0][i].setPiece(new jchess.NewRook(this, player));
         this.squares[7][i].setPiece(new Rook(this, player));
         this.squares[1][i].setPiece(new Knight(this, player));
         this.squares[6][i].setPiece(new Knight(this, player));
