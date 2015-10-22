@@ -1,6 +1,6 @@
 # README #
 
-Version of JOpenChess by group 3
+Version of JOpenChess by group Tres
 
 ### What is this repository for? ###
 
